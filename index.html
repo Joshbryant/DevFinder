@@ -1,30 +1,1478 @@
-
-<html lang=''>
+<!DOCTYPE html>
 <head>
-   <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="css/style.css">
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
-   <title>DevFinder</title>
+  <title>Script Mania</title>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fonts/open-sans/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css" type="text/css" media="screen" />
+  <!-- CSS styles, Not sure how many we should ice-olate.  --> 		
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/color-scheme.css" type="text/css" media="screen" />
+  <!-- Javascripts - Use the if IE8 for internet explorer --> 		<!--[if IE 8]><script src="js/respond.min.js"></script><![endif]--> 		
+  <script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 		
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');</script> 		<script src="js/modernizr.min.js"></script><script src="js/bootstrap.min.js"></script> 		<script src="js/package.min.js"></script>
+  <script src="js/jquery.tweet.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 <body>
-
-<div id='menu'>
-<ul>
-   <li class='active'><a href='#'><span>Home</span></a></li>
-   <li><a href='#'><span>Jobs</span></a></li>
-   <li><a href='#'><span>Scripts</span></a></li>
-   <li class='last'><a href='#'><span>Forums</span></a></li>
-   <li class='last'><a href='#'><span>Profile</span></a></li>
-   <li class='login'><img src="http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_small.png"></img></li>
-
-</ul>
-</div>
-
-<div id='conatiner'>
-</div>
-
+  <!-- PAGE WRAPPER --> 		
+  <div id="wrapper" class="wide">
+    <!-- SITE HEADER  --> 			
+    <div id="header-container">
+      <!-- main header --> 				
+      <div id="header-center">
+        <div class="container">
+          <div class="row">
+            <!-- logo --> 							
+            <div class="col-xs-6 col-sm-6 logo-container"> 								
+              <strong class="logo "> 									
+              <a href="index.html"> 										
+              <img style="margin:0px auto;display:block" src="img/logo.png" alt="ScriptMania" title="ScriptMania" /> </a> 								
+              </strong> 							
+            </div>
+            <!-- /logo --> 							 							
+          </div>
+        </div>
+      </div>
+      <!-- /main header --> 				 				
+      <!-- Navigation menu --> 				
+      <div id="menu-container">
+        <div class="container">
+          <div class="inner">
+            <!-- main menu --> 							
+            <ul class="main-menu menu visible-lg">
+              <li class="active">
+                <a href="index.html"><i class="icon-home"></i></a> 									 									
+              </li>
+              <li>
+                <a href="javascript:void(0);">Scripts</a> 									 									
+                <ul>
+                  <li>
+                    <a href="product_grid.html">Staff Picks</a> 											 											
+                    <ul>
+                      <li><a href="/scripts">Pick 1</a></li>
+                      <li><a href="#">Pick 2</a></li>
+                      <li><a href="#">Pick 3</a></li>
+                      <li><a href="#">Pick 4</a></li>
+                      <li><a href="#">Pick 5</a></li>
+                      <li><a href="#">Pick 6</a></li>
+                      <li><a href="#">Pick 7</a></li>
+                      <li><a href="#">Pick 8</a></li>
+                    </ul>
+                  </li>
+                  <li >
+                    <a href="javascript:void(0);">Featured</a> 											 											
+                    <ul>
+                      <li><a href="#">Featured 1</a></li>
+                      <li><a href="#">Featured 2</a></li>
+                      <li><a href="#">Featured 3</a></li>
+                      <li><a href="#">Featured 4</a></li>
+                      <li><a href="#">Featured 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Roleplay</a></li>
+                  <li><a href="#">Gamemode</a></li>
+                  <li><a href="#">VGUI</a></li>
+                  <li><a href="#">Enities</a></li>
+                  <li><a href="#">TTT</a></li>
+                  <li><a href="#">Vehicles</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/jobs/">Jobs</a> 									 									
+                <ul>
+                  <li><a href="/jobs/create">Create</a></li>
+                  <li><a href="/jobs">Apply</a></li>
+                  <li><a href="/jobs">Browse</a></li>
+                </ul>
+              </li>
+              <li> 									
+                <a href="/shops/">Shops</a> 								
+              </li>
+              <li>
+                <a href="#">All categories</a> 									
+                <div class="mega-menu">
+                  <div class="row">
+                    <div class="col-lg-4 mm-col">
+                      <h4 class="menu-title">Items & Usables</h4>
+                      <div class="row">
+                        <div class="mm-row">
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> Weapons</a></li>
+                              <li><a href="#"> Vehicles</a></li>
+                              <li><a href="#"> Printers</a></li>
+                              <li><a href="#"> Props</a></li>
+                              <li><a href="#"> Machines</a></li>
+                              <li><a href="#"> E2</a></li>
+                              <li><a href="#"> Station</a></li>
+                              <li><a href="#"> NPC's</a></li>
+                              <li><a href="#"> Misc</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> Vehicle Accessories</a></li>
+                              <li><a href="#"> Dealers</a></li>
+                              <li><a href="#"> Radios & Sound</a></li>
+                              <li><a href="#"> Menue's</a></li>
+                              <li><a href="#"> Misc</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mm-col">
+                      <h4 class="menu-title">Gamemodes & Intangibles</h4>
+                      <div class="row">
+                        <div class="mm-row">
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> VGUI</a></li>
+                              <li><a href="#"> NPC's</a></li>
+                              <li><a href="#"> Skins</a></li>
+                              <li><a href="#"> F4 Menus</a></li>
+                              <li><a href="#"> Scoreboards</a></li>
+                              <li><a href="#"> Huds</a></li>
+                              <li><a href="#"> Random Menues</a></li>
+                              <li><a href="#"> Full Gamemodes</a></li>
+                              <li><a href="#"> Other</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> Point-Shop Skins</a></li>
+                              <li><a href="#"> Shops</a></li>
+                              <li><a href="#"> Games</a></li>
+                              <li><a href="#"> Utilities</a></li>
+                              <li><a href="#"> Admin</a></li>
+                              <li><a href="#"> Website</a></li>
+                              <li><a href="#"> Donation</a></li>
+                              <li><a href="#"> Loading</a></li>
+                              <li><a href="#"> MOTD</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mm-col">
+                      <h4 class="menu-title">Other</h4>
+                      <div class="row">
+                        <div class="mm-row">
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-6 col-sm-6">
+                            <ul>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                              <li><a href="#"> Category</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="/forums/">Forums</a></li>
+              <li><a href="users.html">Users</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- /main menu --> 							 							
+            <!-- search box --> 							
+            <div class="search-cont">
+              <form onsubmit="event.preventDefault();"> 									
+                <input type="text" name="query" class="query" placeholder="Search Scripts" /> 									
+                <button class="btn-search"><i class="icon-search"></i></button> 								
+              </form>
+            </div>
+            <!-- /search box --> 							 						
+          </div>
+        </div>
+      </div>
+      <!-- /Navigation menu --> 				 			
+    </div>
+    <div id="site-wrapper">
+      <!-- TOP SLIDER -->
+      <!-- INCLUDE ESSENTIAL SLIDESHOW FILES -->
+      <link rel="stylesheet" href="css/flexslider/flexslider.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="css/flexslider/default.css" type="text/css" media="screen" />
+      <script src="js/jquery.flexslider.min.js"></script>
+      <!-- FLEXSLIDER CONTAINER -->
+      <div id="top-slider" class="flexslider-container container">
+        <h4 class="section-title">Popular Scripts</h4>
+        <div class="flexslider">
+          <!-- BEGIN SLIDES -->
+          <ul class="slides">
+            <li>
+              <img src="img/placeholder/slider3.jpg" alt="" />
+            </li>
+            <li>
+              <img src="img/placeholder/slider4.jpg" alt="" />
+            </li>
+            <li><img src="img/placeholder/slider3.jpg" alt="" /></li>
+            <li><img src="img/placeholder/slider5.jpg" alt="" /></li>
+            <li><img src="img/placeholder/slider4.jpg" alt="" /></li>
+          </ul>
+          <!-- #END SLIDES -->
+        </div>
+      </div>
+      <!-- /FLEXSLIDER CONTAINER -->
+      <!-- INITIALIZE SLIDESHOW -->
+      <script>
+        jQuery(function($) {
+        	var $slider = $('#top-slider > .flexslider');
+        	$slider.imagesLoaded(function() {
+        		$slider.flexslider({
+        			animation: 'slide',
+        			easing: 'easeInBack',
+        			useCSS: false,
+        			animationSpeed: 1000,
+        			slideshow: false,
+        			smoothHeight: true,
+        			start: function(slider) {
+        				// wrap control nav inside container
+        				var $controlNav = $slider.find('.flex-control-nav');					
+        				$controlNav.wrap('<div class="flex-pagination-container" />').wrap('<div class="container" />').wrap('<div class="col-xs-12 col-sm-12" />');
+        				$controlNav.fadeIn();
+        				
+        				center_caption(slider);
+        			}
+        		});
+        	});
+        	$(window).on('throttledresize', function() {
+        		$slider.find('.flex--slide .caption-body').each(function() {
+        			var $caption = $(this),
+        				captionH = $caption.outerHeight(),
+        				sliderH = $slider.height(),
+        				top = (sliderH - captionH) / 2;
+        		
+        			$caption.css( 'top', top + 'px' );
+        		});
+        	});
+        });
+        
+      </script>
+      <!-- /TOP SLIDER -->
+      <!-- mini banner -->
+      <div class="section carousel-iframe">
+        <div class="container">
+          <div class="row carousel-iframe banner-module">
+            <div class="col-xs-12 col-sm-12">
+              <h4 class="section-title">Featured Shops</h4>
+              <div class="section-inner">
+                <!-- carousel control nav direction -->
+                <div class="carousel-direction-arrows">
+                  <ul class="direction-nav carousel-direction">
+                    <li>
+                      <a class="crsl-prev btn" href="#">
+                      <span class="icon-arrow-left10"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="crsl-next btn" href="#">
+                      <span class="icon-arrow-right9"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel control nav direction -->
+                <!-- carousel wrapper -->
+                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="3" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                  <ul class="products-container product-grid carousel-list landscape ">
+                    <li>
+                      <div class="product">
+                        <a href="#" class="product-link clearfix">
+                          <div class="ribbon specials">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/bannerm1.jpg" alt="banner" />
+                          </div>
+                          <div class="product-info clearfix">
+                            <h3 class="title">Summer Products</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="#" class="product-link clearfix">
+                          <div class="ribbon specials">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/bannerm2.jpg" alt="banner" />
+                          </div>
+                          <div class="product-info clearfix">
+                            <h3 class="title">Summer Products</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="#" class="product-link clearfix">
+                          <div class="ribbon specials">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/bannerm3.jpg" alt="banner" />
+                          </div>
+                          <div class="product-info clearfix">
+                            <h3 class="title">Summer Products</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="#" class="product-link clearfix">
+                          <div class="ribbon specials">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/bannerm4.jpg" alt="banner" />
+                          </div>
+                          <div class="product-info clearfix">
+                            <h3 class="title">Summer Products</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /mini banner -->
+      <!-- Latest products -->
+      <div class="section carousel-iframe">
+        <div class="container">
+          <div class="row carousel-iframe latest-module">
+            <div class="col-xs-12 col-sm-12">
+              <h4 class="section-title">Featured Scripts</h4>
+              <div class="section-inner">
+                <!-- carousel control nav direction -->
+                <div class="carousel-direction-arrows">
+                  <ul class="direction-nav carousel-direction">
+                    <li>
+                      <a class="crsl-prev btn" href="#">
+                      <span class="icon-arrow-left10"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="crsl-next btn" href="#">
+                      <span class="icon-arrow-right9"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel control nav direction -->
+                <!-- carousel wrapper -->
+                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                  <ul class="products-container product-grid carousel-list portrait ">
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			 title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title="">  Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p2.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p4.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p5.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p6.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p6.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Latest products -->
+      <div class="section carousel-iframe">
+        <div class="container">
+          <div class="row carousel-iframe featured-module">
+            <div class="col-xs-12 col-sm-12">
+              <h4 class="section-title">Top Sales</h4>
+              <div class="section-inner">
+                <!-- carousel control nav direction -->
+                <div class="carousel-direction-arrows">
+                  <ul class="direction-nav carousel-direction">
+                    <li>
+                      <a class="crsl-prev btn" href="#">
+                      <span class="icon-arrow-left10"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="crsl-next btn" href="#">
+                      <span class="icon-arrow-right9"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel control nav direction -->
+                <!-- carousel wrapper -->
+                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                  <ul class="products-container product-grid carousel-list portrait ">
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			 title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title="">  Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p2.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p4.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p5.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p6.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bestseller products -->
+      <div class="section carousel-iframe">
+        <div class="container">
+          <div class="row carousel-iframe bestseller-module">
+            <div class="col-xs-12 col-sm-12">
+              <h4 class="section-title">Top Ratings</h4>
+              <div class="section-inner">
+                <!-- carousel control nav direction -->
+                <div class="carousel-direction-arrows">
+                  <ul class="direction-nav carousel-direction">
+                    <li>
+                      <a class="crsl-prev btn" href="#">
+                      <span class="icon-arrow-left10"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="crsl-next btn" href="#">
+                      <span class="icon-arrow-right9"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel control nav direction -->
+                <!-- carousel wrapper -->
+                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                  <ul class="products-container product-grid carousel-list portrait ">
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			 title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title="">  Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p2.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p4.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p5.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p6.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section carousel-iframe">
+        <div class="container">
+          <div class="row carousel-iframe sales-module">
+            <div class="col-xs-12 col-sm-12">
+              <h4 class="section-title">Newest Scripts</h4>
+              <div class="section-inner">
+                <!-- carousel control nav direction -->
+                <div class="carousel-direction-arrows">
+                  <ul class="direction-nav carousel-direction">
+                    <li>
+                      <a class="crsl-prev btn" href="#">
+                      <span class="icon-arrow-left10"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="crsl-next btn" href="#">
+                      <span class="icon-arrow-right9"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel control nav direction -->
+                <!-- carousel wrapper -->
+                <div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
+                  <ul class="products-container product-grid carousel-list portrait ">
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			 title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title="">  Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p2.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p4.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p5.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p6.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product">
+                        <a href="single.html" class="product-link clearfix">
+                          <div class="ribbon special">SALE</div>
+                          <div class="product-thumbnail">
+                            <img src="img/placeholder/p1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="button-add">
+                          <div class="button-add-inner">
+                            <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
+                            <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
+                          </div>
+                        </div>
+                        <div class="product-info clearfix">
+                          <h4 class="title">
+                            <a href="single.html">T-SHIRT PRODUCT</a>
+                          </h4>
+                          <div class="details">
+                            <div class="product-price"> 
+                              <span class="price-old">323</span> 
+                              <span class="price-new">265</span> 
+                            </div>
+                            <p class="by">
+                              <img src="image/stars-5.png"/>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /carousel wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-powered">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 copyright center-sm">
+            Copyright &copy; 2014 Script Mania   |   All Rights Reserved.
+          </div>
+          <div class="col-xs-12 space10 visible-xs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /SITE FOOTER -->
+  </div>
+  <script src="js/jquery.carouFredSel.min.js"></script>
 </body>
-<html>
+</html>
