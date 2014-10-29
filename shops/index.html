@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <!-- TO DO: Hook into a cms to control scripts, latest scripts, staff picks etc. Make filters work. Seperate images and packages -->
+  <!-- TO DO: Hook into a cms to control scripts, laTEST SHOPs, staff picks etc. Make filters work. Seperate images and packages -->
   <meta charset="UTF-8" />
-  <title>ScriptMania | Scripts</title>
+  <title>ScriptMania | Shops</title>
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,8 +55,8 @@
               <li>
                 <a href="../index.html"><i class="icon-home"></i></a> 									 									
               </li>
-              <li class="active">
-                <a href="javascript:void(0);">Scripts</a>				 									
+              <li>
+                <a href="javascript:void(0);">Shops</a> 									 									
                 <ul>
                   <li>
                     <a href="../product_grid.html">Staff Picks</a> 											 											
@@ -97,8 +97,8 @@
                   <li><a href="./jobs/view/">Browse</a></li>
                 </ul>
               </li>
-              <li> 									
-                <a href="../shops/">Shops</a> 								
+              <li class="active"> 									
+                <a href="index.html">Shops</a> 								
               </li>
               <li>
                 <a href="#">All categories</a> 									
@@ -211,7 +211,7 @@
             <!-- search box -->
             <div class="search-cont">
               <form onsubmit="event.preventDefault();">
-                <input type="text" name="query" class="query" placeholder="Search Scripts" />
+                <input type="text" name="query" class="query" placeholder="Search Shops" />
                 <button class="btn-search"><i class="icon-search"></i></button>
               </form>
             </div>
@@ -257,21 +257,7 @@
                 
                 
               </script>
-              <!-- /CHOOSE COLOR -->
-              <!-- PRICE RANGE -->
-              <div class="section ">
-                <h4 class="section-title">Price Range</h4>
-                <div class="section-inner">
-                  <div class="range-slider-container">
-                    <div class="range-slider"></div>
-                    <div class="range-slider-value clearfix">
-                      <span class="min"></span>
-                      <span class="max"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /PRICE RANGE -->
+              
               <!-- Latest products -->
               <div class="section carousel-iframe">
                 <div class="container">
@@ -311,6 +297,8 @@
                                     <a onclick="#" class="wishlist-hover" 			 title="">  ADD TO WISHLIST</a>
                                     <a onclick="#" class="add-to-cart cart-hover"    title="">  Purchase</a>
                                     <a onclick="#" class="add-to-cart cart-hover"    title="">  View</a>
+                                    
+
                                   </div>
                                 </div>
                                 <div class="product-info clearfix">
@@ -407,7 +395,7 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12 space20 visible-xs"></div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 desc-out">
-                  <div class="description">Welcome to ScriptMania! You can search for specific scripts or you can use our new feature of price range! Feel free to submit reports of bugs and glitches you may find so we can fix them ASAP! Thank you for staying with us. Enjoy your stay!<br></br> Please note: Some features are all not complete. We are trying our very hardest to get them done for your sake! So bare with us. We are working on it.</div>
+                  <div class="description">Welcome to the shop browse page. You can browse all the user created shops here! We provided descriptions with each shop to ensure you find the one right for you with the highest quality! If you find any issues please contact us! Any help is appreciated and will help the website in the future!</div>
                 </div>
               </div>
               <div class="clearfix "></div>
@@ -464,7 +452,7 @@
               <div id="product-list-container" class="section offer products-container portrait" data-layout="list">
                 <div class="row">
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -475,24 +463,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -517,7 +504,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -528,24 +515,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -570,7 +556,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -581,24 +567,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -623,7 +608,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -634,24 +619,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -676,7 +660,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -687,24 +671,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -729,7 +712,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -740,24 +723,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -782,7 +764,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -793,24 +775,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -835,7 +816,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -846,24 +827,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -888,7 +868,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -899,24 +879,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -941,7 +920,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -952,24 +931,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -994,7 +972,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -1005,24 +983,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
@@ -1047,7 +1024,7 @@
                     </div>
                   </div>
                   <div class="mix col-xs-12 col-sm-6 col-lg-4">
-                    <div class="product"  data-name="'Test Script'"   >
+                    <div class="product"  data-name="'TEST SHOP'"   >
                       <a href="#" class="product-link clearfix">
                         <div class="ribbon special">Sale</div>
                         <div class="product-thumbnail">
@@ -1058,24 +1035,23 @@
                         <div class="button-add-inner">
                           <a onclick="#" class="wishlist-hover" 			title="">  ADD TO WISHLIST</a>
                           <a onclick="#" class="add-to-cart cart-hover"    title=""> Purchase</a>
-                          <a onclick="#" class="add-to-cart cart-hover"    title=""> View</a>
                         </div>
                       </div>
                       <div class="product-info clearfix">
                         <h4 class="title">
-                          <a href="#">Test Script</a>
+                          <a href="#">TEST SHOP</a>
                         </h4>
                         <div class="product-price"> 
-                          <span class="price-org">$223</span>
-                          <span class="price-old">$222</span> 
-                          <span class="price-new">$221</span> 
+                          <span class="price-org">Views:</span>
+
+                          <span class="price-new">221</span> 
                         </div>
                         <div class="listdescription">
                           <div class="text">
                             <p>THIS IS A TEST DESCRIPTION. NOW THAT I SEE THIS WORKS TODO: ADD HTML FORMATTING, HOOKING INTO CMS. ALL IS LOOKING GOOD. LETS SEE HOW LONG WE CAN GET THIS WITHOUT EXPLODING FROM THE CONTAINER. STILL GOING........... STILL GOING.......<a href="single.html" class="readmore" title="read more">[...] </a></p>
                           </div>
                           <div class="add-to-cart">
-                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-cart2"></i><span>Purchase</span></a>
+                            <a  onclick="" title="" class="btn btn-primary btn-iconed"><i class="icon-user2"></i><span>View</span></a>
                           </div>
                           <ul class="links">
                             <li><a onclick="" title="ADD TO WISHLIST" > <i class="icon-list5"></i> </a></li>
